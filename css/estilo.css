@@ -9,6 +9,24 @@ nav>ul {
     margin: 0px;
     top: 0;
     height: 50px;
+    padding: 0;
+}
+.cerrar.elemnto {
+    color: white;
+    position: fixed;
+    top: 8px;
+    right: 16px;
+    background: #006a80;
+    padding: 12px;
+    border-radius: 35%;
+    font-weight: 800;
+    cursor: pointer;
+}
+h1.h1small {
+    position: fixed;
+    width: fit-content;
+    top: 27px;
+    z-index: -3;
 }
 body {
     margin-top: 70px;
@@ -107,4 +125,68 @@ a {
 #footer a {
     color: #98e3ec;
     text-decoration: revert;
+}
+section.columnas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+section#preguntas-frecuentes {
+    display: grid;
+    justify-items: center;
+    padding: 25px;
+    margin: 5px;
+}
+section.geometria {
+    display: flex;
+    justify-content: center;
+}
+.cuadrado {
+    background: #bb0039;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px 50px 50px 50px;
+}
+.circulo {
+    width: 50px;
+    height: 50px;
+    background: #fffcfc;
+    position: absolute;
+    left: 38%;
+    top: 38%;
+    border-radius: 50%;
+}
+#imagenfalsa {
+    height: 750px;
+    width: 667px;
+    background-image: url(/imagenes/calavera-rosa.png);
+    margin: 80px auto;
+    background-color: black;
+    background-attachment: fixed;
+    background-size: 375px 333px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    border: 12px solid #bb0039;
+}
+.perrito {
+    margin: auto;
+    width: 667px;
+    height: 212px;
+    background-image: url(/imagenes/perrito.png);
+    background-color: #bb003929;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+a[target="_blank"] {
+    background-image: url(/imagenes/calavera-rosa.png);
+    padding-right: 1.5em;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
 }
