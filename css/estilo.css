@@ -1,3 +1,8 @@
+:root{
+--verdeagua: #009688;
+--azul: #1924FA;
+--morado: #c874dc;
+}
 nav>ul {
     list-style: none;
     display: flex;
@@ -30,6 +35,7 @@ h1.h1small {
 }
 body {
     margin-top: 70px;
+    font-family: 'Catamaran', sans-serif;
 }
 .cm {
     background: blue;
@@ -38,7 +44,7 @@ body {
     color: white;
 }
 .mm {
-    background: #009688;
+    background: var(--verdeagua);
     width: 100mm;
     height: 100mm;
     color: white;
@@ -94,7 +100,7 @@ body {
 }
 /* Así se hacen los comentarios */
 #footer {
-    background: #009688;
+    background: var(--verdeagua);
     color: white;
     text-align: center;
     padding: 5px;
@@ -113,13 +119,20 @@ p.intro {
     margin: 5px;
 }
 div, span {
-    color: #5507ef;
+    color: #000000;
+    animation-name: cambiocolor;
+    animation-duration: 5s;
+}
+@keyframes cambiocolor {
+    0%{color: var(--verdeagua)}
+    50%{color: var(--azul)}
+    100%{color:black}
 }
 div span {
     background: #e4e4e4;
 }
 a {
-    color: #078923;
+    color: var(--azul);
     text-decoration: none;
 }
 #footer a {
@@ -144,11 +157,12 @@ section.geometria {
     justify-content: center;
 }
 .cuadrado {
-    background: #bb0039;
+    background: var(--morado);
     width: 200px;
     height: 200px;
     position: relative;
     margin: 50px 50px 50px 50px;
+    z-index: -1;
 }
 .circulo {
     width: 50px;
@@ -170,14 +184,14 @@ section.geometria {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
-    border: 12px solid #bb0039;
+    border: 12px solid var(--morado);
 }
 .perrito {
     margin: auto;
     width: 667px;
     height: 212px;
     background-image: url(/imagenes/perrito.png);
-    background-color: #bb003929;
+    background-color: var(--morado);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -189,4 +203,41 @@ a[target="_blank"] {
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: right;
+}
+img {
+    max-width: 100%;
+}
+.cita {
+    width: max(70%, 300px);
+}
+.hola {
+    background: var(--morado);
+    width: calc(100% - 40px);
+    margin: auto;
+}
+/*Responsive*/
+@media all and (min-width: 400px) and (max-width: 800px) 
+{
+    nav>ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    section#bannerhome {
+        margin: 180px 0 0 0;
+    }
+    h1.h1small {
+        position: inherit;
+    }
+}
+nav>ul li {
+    margin: 6px 0px;
+}
+@media all and (min-width: 2200px) 
+{
+    * {
+        max-width: 2200px;
+        margin: auto;
+    }
 }
