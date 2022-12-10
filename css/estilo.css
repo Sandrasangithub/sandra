@@ -118,10 +118,10 @@ p.intro {
     font-size: 20px;
     margin: 5px;
 }
-div, span {
+/* div, span {
     color: #000000;
     animation-name: cambiocolor;
-    animation-duration: 5s;
+    animation-duration: 5s; */
 }
 @keyframes cambiocolor {
     0%{color: var(--verdeagua)}
@@ -230,9 +230,6 @@ img {
     h1.h1small {
         position: inherit;
     }
-}
-nav>ul li {
-    margin: 6px 0px;
 }
 @media all and (min-width: 2200px) 
 {

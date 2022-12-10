@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/estilo.css">
-    <title>Sobre mi</title>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/sobre-mi.html">Sobre mi </a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-                <li><a href="/carpeta/archivo-carpeta.html">Archivo dentro de carpeta</a></li>
-                <li><a href="https://carlos.sanchezdonate.com/" target="_blank">Más información</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
     <h1>Bienvenido a la página sobre mi</h1>
     <div class="cita"> <em>Lorem ipsum dolor sit amet,</em> consectetur adipiscing elit. <strong>Nunc vehicula nunc eu facilisis rhoncus.</strong> Morbi fringilla, metus
         <p>

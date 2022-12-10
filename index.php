@@ -1,39 +1,10 @@
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
+echo $_SERVER['DOCUMENT_ROOT'];
+?>
 
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <link  href="/css/fonts.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/estilo.css"  >
-        <title>Esto es un título de ejemplo</title>
-        <style>
-            .intro {
-                color: green;
-                background: #cbedea;
-                padding: 20px;
-                margin-top: 6px;
-                margin-bottom: 6px;
-            }
-
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="/sobre-mi.html">Sobre mi </a></li>
-                    <li><a href="/contacto.html">Contacto</a></li>
-                    <li class="jueves master"><a href="/carpeta/archivo-carpeta.html">Archivo dentro de carpeta</a></li>
-                    <li><a href="https://carlos.sanchezdonate.com/" target="_blank">Más información</a></li>
-                </ul>
-                <div class="cerrar elemnto">X</div>
-            </nav>
-        </header>
         <!--Esto es un comentario-->
         <section id="bannerhome">
-            <h1 class="h1small">Esto de aquí es un h1</h1>
+            <h1 class="h1small">Esto de aquí es un h1 <?php echo "Esto de aquí es PHP";?></h1>
             <div title="Este texto se lee cuando haces hover en este elemento">Esto de  aquí no</div>
             <p>Esto <b style="color:rgb(226, 43, 183);">es </b>un párrafo</p>
             <sandra>Esto es una etiqueta personalizada</sandra><br>
