@@ -1,7 +1,10 @@
-<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
-echo $_SERVER['DOCUMENT_ROOT'];
-?>
+<?php
+define("pagina", "inicio");
 
+$titulo = "Página de inicio";
+include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
+    echo $_SERVER['DOCUMENT_ROOT'];
+?>
         <!--Esto es un comentario-->
         <section id="bannerhome">
             <h1 class="h1small">Esto de aquí es un h1 <?php echo "Esto de aquí es PHP";?></h1>
@@ -35,17 +38,18 @@ echo $_SERVER['DOCUMENT_ROOT'];
                 Your browser does not support the video tag.
             </video>
         </section>
-
-        <section id="footer">
-            <footer>
-               <p>
-                 <!-- A esa etiqueta le falla algo, revisa -->
-                    <addres>
-                        <a href="mailto:hola@gmail.com">Email</a><br/>
-                        Dirección
-                    </address>
-                </p>
-            </footer>
-        </section>
-    </body>
-</html>
+        <?php cta();?>
+        <?php 
+        $ciudad = 'Valencia';
+                switch ($ciudad){
+                    case 'Salamanca':
+                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-salamanca.php';
+                        break;
+                     case 'Madrid':
+                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-madrid.php';
+                        break;
+                    default:
+                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
+                        break;            
+            }
+            ?>

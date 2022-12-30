@@ -1,4 +1,10 @@
-<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
+<?php 
+define("pagina", "nueva carpeta");
+$ciudad = 'Salamanca';
+include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
+
+
+?>
         <h1>Bienvenido al archivo carpeta</h1>
         <section id="table 1">
             <table>
@@ -26,6 +32,7 @@
                 </tfoot>
             </table>
         </section>
+        <?php call() ?>
 
         <section class="medidas">
             <h2>Medidas absolutas</h2>
@@ -45,14 +52,17 @@
                 <div class="vw">vw = Porcentaje del ancho del viewport</div>
                 <div class="porcentaje">% Porcentaje del tamaño del elemnto padre</div>
             </div>
-        <section id="footer">
-            <footer>
-               <p> <address>
-                        <a href="mailto:hola@gmail.com">Email</a><br/>
-                        Dirección
-                    </address>
-                </p>
-            </footer>
-        </section>
-    </body>
-</html>
+            <?php 
+                switch ($ciudad){
+                    case 'Salamanca':
+                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-salamanca.php';
+                        break;
+                     case 'Madrid':
+                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-madrid.php';
+                        break;
+                    default:
+                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
+                        break;            
+            }
+            
+            ?>

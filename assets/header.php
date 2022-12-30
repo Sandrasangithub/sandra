@@ -6,7 +6,17 @@
         <meta charset="UTF-8">
         <link  href="/css/fonts.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/estilo.css"  >
-        <title>Esto es un título de ejemplo</title>
+        <title>
+            <?php
+            define("tituloprov", "Título provisional");
+                if(isset($titulo)){
+                    echo $titulo;
+                }
+                else{
+                    echo tituloprov;
+                }
+            ?>
+        </title>
         <style>
             .intro {
                 color: green;
@@ -22,12 +32,62 @@
         <header>
             <nav>
                 <ul>
+
                     <li><a href="/">Inicio</a></li>
-                    <li><a href="/sobre-mi.php">Sobre mi </a></li>
-                    <li><a href="/contacto.php">Contacto</a></li>
-                    <li class="jueves master"><a href="/carpeta/archivo-carpeta.php">Archivo dentro de carpeta</a></li>
+                    <li><a href="/sobre-mi">Sobre mi </a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                    <li class="jueves master"><a href="/carpeta/archivo-carpeta">Archivo dentro de carpeta</a></li>
                     <li><a href="https://carlos.sanchezdonate.com/" target="_blank">Más información</a></li>
+                    <li><a href="/nueva">Redirección php</a></li>
                 </ul>
                 <div class="cerrar elemnto">X</div>
             </nav>
+            <?php
+            include_once $_SERVER['DOCUMENT_ROOT'].'/assets/functions.php';
+                 
+              if(isset($h1)){
+                  echo $h1;
+              }
+              elseif(pagina) {
+                echo "<h1>" . "Esto es la página " .pagina ."</h1>";
+              }
+                else {
+                echo "<h1>Esto es un h1 inventado </h1>";
+            }
+            
+              
+              /*
+              Hice esto para probar la constante con el switch - case, pero vi que era mucho más sencillo de la otra manera, en este caso.
+              Entiendo que si la frase a poner fuera diferente según la página si que sería mejor el switch -case. 
+
+                switch (constant("pagina")) {
+                    case 'inicio':
+                      echo "<h1>" . "Esto es la página " .pagina ."</h1>";
+                        break;
+                    case 'contacto':
+                        echo "<h1>" . "Esto es la página " .pagina ."</h1>";
+                        break;
+                    case 'sobre mi':
+                        echo "<h1>" . "Esto es la página " .pagina ."</h1>";
+                        break;
+                    case 'archivo carpeta':
+                      echo "<h1>" . "Esto es la página " .pagina ."</h1>";
+                        break;
+                    default:
+                    echo 'Esta página no esta definida';
+                        break;
+                    }
+              }
+         */
+          
+
+?>
+    <?php 
+    if (isset($suscripcion)) {
+        echo cta1();
+    }
+    else{
+        echo cta();
+    }
+    ?>
         </header>

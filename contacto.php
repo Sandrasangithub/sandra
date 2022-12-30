@@ -1,7 +1,11 @@
-<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
+<?php 
+define("pagina", "");
+$suscripcion = "";
+$ciudad = 'Madrid';
+include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
+include $_SERVER['DOCUMENT_ROOT'].'/assets/tablassql.php';
+?>
         <h1>Bienvenido a la página de contacto</h1>
-        
-     
        <?php
             function nombre($nombre)
             {
@@ -42,4 +46,16 @@
         <div class="perrito"></div>
         <div id="imagenfalsa"></div>
       
-        <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>                                   
+        <?php 
+                switch ($ciudad){
+                    case 'Salamanca':
+                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-salamanca.php';
+                        break;
+                     case 'Madrid':
+                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-madrid.php';
+                        break;
+                    default:
+                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
+                        break;            
+            }
+            ?>
