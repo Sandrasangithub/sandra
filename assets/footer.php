@@ -1,14 +1,13 @@
-
-       <section id="footer">
-            <footer>
-               <p>
-                 <!-- A esa etiqueta le falla algo, revisa -->
-                    <addres>
-                        <a href="mailto:hola@gmail.com">Email</a><br/>
-                        Dirección genérica
-                    </address>
-                </p>
-            </footer>
-        </section>
-    </body>
-</html>
+<?php
+        switch ($ciudad){
+            case 'Salamanca':
+                include $_SERVER['DOCUMENT_ROOT'].'/assets/footers/footer-salamanca.php';
+                break;
+             case 'Madrid':
+                include $_SERVER['DOCUMENT_ROOT'].'/assets/footers/footer-madrid.php';
+                break;
+            default:
+                include $_SERVER['DOCUMENT_ROOT'].'/assets/footers/footer-default.php';
+                break;
+    }
+    ?>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 define("pagina", "nueva carpeta");
 $ciudad = 'Salamanca';
 include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
@@ -52,17 +52,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
                 <div class="vw">vw = Porcentaje del ancho del viewport</div>
                 <div class="porcentaje">% Porcentaje del tamaño del elemnto padre</div>
             </div>
-            <?php 
-                switch ($ciudad){
-                    case 'Salamanca':
-                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-salamanca.php';
-                        break;
-                     case 'Madrid':
-                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-madrid.php';
-                        break;
-                    default:
-                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
-                        break;            
-            }
-            
+            <?php
+            include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
+
             ?>

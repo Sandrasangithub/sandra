@@ -1,4 +1,4 @@
-<?php 
+<?php
 define("pagina", "");
 $suscripcion = "";
 $ciudad = 'Madrid';
@@ -18,7 +18,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/tablassql.php';
            $b = "1";
            if("$a" == "$b"){
                echo '<div style="color:green">'."$a ". "y "."$b " . "Son iguales" . '</div>';
-            } 
+            }
             elseif($a == "0"){
                 echo '<div style="color:pink">'.'$a '. "es igual a 0" . '</div>';
             }
@@ -45,17 +45,5 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/tablassql.php';
         </section>
         <div class="perrito"></div>
         <div id="imagenfalsa"></div>
-      
-        <?php 
-                switch ($ciudad){
-                    case 'Salamanca':
-                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-salamanca.php';
-                        break;
-                     case 'Madrid':
-                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-madrid.php';
-                        break;
-                    default:
-                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
-                        break;            
-            }
-            ?>
+
+      <?php  include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>

@@ -3,6 +3,7 @@ define("pagina", "inicio");
 
 $titulo = "Página de inicio";
 include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
+$ciudad = 'Valencia';
     echo $_SERVER['DOCUMENT_ROOT'];
 ?>
         <!--Esto es un comentario-->
@@ -15,7 +16,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
                 <img src="/imagenes/estructura-html5.jpg" width="500" height="214" title=" Estructura html" alt="texto alternativo de la imagen">
                 <div class="columna2">
                     <div class="intro">Esto es una etiqueta div<span class="lunes">que tiene un span dentro</span></div>
-                    <span>Esto es una etiqueta span</span> 
+                    <span>Esto es una etiqueta span</span>
                     <div>Esto es un div, con <div>un div dentro</div></div>
                     <span>Esto es un span con un <div> div dentro</div></span>
                 </div>
@@ -38,18 +39,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
                 Your browser does not support the video tag.
             </video>
         </section>
-        <?php cta();?>
-        <?php 
-        $ciudad = 'Valencia';
-                switch ($ciudad){
-                    case 'Salamanca':
-                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-salamanca.php';
-                        break;
-                     case 'Madrid':
-                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer-madrid.php';
-                        break;
-                    default:
-                        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
-                        break;            
-            }
+        <?php
+        cta();
+        include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
             ?>
