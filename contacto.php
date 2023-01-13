@@ -5,6 +5,10 @@ $ciudad = 'Madrid';
 include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
 include $_SERVER['DOCUMENT_ROOT'].'/assets/tablassql.php';
 ?>
+<p id="firstjs"> Mi primer JavaScript con onclick</p>
+<button type="button"
+onclick='document.getElementById("firstjs").innerHTML = "¡Ha funcionado!"'>Pulsame
+</button>
         <h1>Bienvenido a la página de contacto</h1>
        <?php
             function nombre($nombre)

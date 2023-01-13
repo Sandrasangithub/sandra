@@ -1,9 +1,8 @@
 <?php
 define("pagina", "inicio");
-
+$ciudad = 'Valencia';
 $titulo = "Página de inicio";
 include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
-$ciudad = 'Valencia';
     echo $_SERVER['DOCUMENT_ROOT'];
 ?>
         <!--Esto es un comentario-->
@@ -22,6 +21,12 @@ $ciudad = 'Valencia';
                 </div>
             </section>
         </section>
+        <!--<div class="clickaqui"onclick="funcionprimera()"> Click Aquí </div>-->
+        <div class="clickaqui"> Click Aquí </div>
+        <div class="citaedad">Cita por edad </div>
+        
+
+        <noscript> Código en no script si no funciona Javascript</noscript>
         <section class="parrafos">
             <p class="intro master jueves">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula eget magna sit amet fringilla. Suspendisse aliquet, mauris at dignissim auctor, enim sem molestie dui, vel rhoncus ex turpis ut ligula. Donec quis elit suscipit, posuere nunc at, molestie ligula. Sed faucibus, purus nec faucibus viverra, libero nisl porttitor risus, nec vulputate purus justo in ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere sit amet nulla tincidunt convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras mattis nec orci vitae consequat. Integer finibus id velit id aliquet. Integer ornare volutpat ex vitae commodo. Vestibulum vitae fringilla odio, ut eleifend dolor. Proin imperdiet dignissim accumsan.
             <p class="lunes">In nec ex vitae mi sodales viverra. Proin mollis venenatis mauris, id vulputate neque faucibus et. Vestibulum venenatis condimentum leo at posuere. Nam nulla neque, consectetur ut placerat non, varius et felis. Vestibulum a leo urna. Suspendisse at sollicitudin odio. Aenean in volutpat risus. Pellentesque ultricies quam id leo aliquet, non interdum nibh pellentesque. Aenean consequat nunc sit amet molestie tincidunt. Sed non imperdiet est. Donec vestibulum pretium dui, vulputate pulvinar eros egestas eu.
@@ -39,7 +44,105 @@ $ciudad = 'Valencia';
                 Your browser does not support the video tag.
             </video>
         </section>
-        <?php
+        <section id="puebasjs">
+            <div class="caja">Línea 1 JS</div>
+            <div class="caja azul">Línea 2 JS</div>
+            <div class="caja rosa">Línea 3 JS</div>
+        
+                <style>
+                 .newjs{
+                 background: blue; 
+                }
+                .clickaqui {
+                width: 200px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background: var(--morado);
+                color: purple;
+                border-radius: 15px;
+                }
+                .clickcolor{
+                width: 200px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background: var(--verdeagua);
+                color: purple;
+                border-radius: 15px;
+                }
+                body.noche {
+                background: black;
+                color: white;
+                 }
+
+                </style>
+
+        </section>
+         <?php
         cta();
         include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
             ?>
+<script src="/scripts/pruebas.js"></script>
+<script>
+document.getElementById("bannerhome").innerHTML = "Banner home en JavaScript"; // Selector Id
+
+const collection = document.getElementsByClassName("intro");
+for (let i = 0; i < collection.length; i++) {
+collection[i].innerHTML = "Elementos de la clase 'intro' modificados por JS"; //Selector clase
+}
+
+document.getElementsByTagName("p")[1].innerHTML = "Segundo párrafo modificada por js"; //Selector etiqueta
+
+document.querySelector(".azul").setAttribute("class", "newjs"); //Cambiar un atributo por otro "class"
+
+const caja = document.querySelectorAll('.caja');
+for (let i = 0; i < caja.length; i++) {
+caja[i].classList.add('hola');
+}
+
+
+let taza = 'Variable con let';
+var tetera = 'Variable con var';
+const cuchara = 'Constante';
+
+function funcionprimera(){
+    document.querySelector(".clickaqui").setAttribute("class", "clickcolor");
+}
+
+const botonactivado = document.getElementsByClassName("clickaqui");
+botonactivado[0].addEventListener("click", funcionprimera);
+
+
+
+let tiempo = new Date().getHours();
+let modo = document.getElementsByTagName("body")[0];
+
+if (tiempo > 20){
+modo.setAttribute("class", "noche"); 
+}
+else {
+mode.classList.remove("noche");
+}
+
+
+let edad;
+let cita;
+edad=30;
+switch (edad) {
+    case 10:
+    cita = "Lunes";
+    break;
+    case 30:
+    cita = "Martes";
+    break;
+    case 50:
+    cita = "Miercoles";
+    break;
+}
+//No he logrado poner en la edad menoro o mayor
+document.getElementsByClassName("citaedad")[0].innerHTML = "Tu edad es de " + edad + " por ello tu cita es el " + cita;
+
+</script>
