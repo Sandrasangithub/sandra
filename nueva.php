@@ -1,1 +1,0 @@
-<?php header("Location: https://carlos.sanchezdonate.com/como-funciona-una-web/"); ?>
