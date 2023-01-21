@@ -1,3 +1,9 @@
+#redirección a https
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://ejemplo.test/$1 [R=301,L]
+</IfModule>
+
 RewriteEngine on
 
 # Rewrite /foo/bar to /foo/bar.php
@@ -9,3 +15,4 @@ RewriteRule .* - [L,R=404]
 
 # NOTE! FOR APACHE ON WINDOWS: Add [NC] to RewriteCond like this:
 # RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$" [NC]
+

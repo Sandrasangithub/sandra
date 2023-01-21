@@ -5,7 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link  href="/css/fonts.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/estilo.css"  >
+
+        <?php
+            switch (constant("pagina")){
+                case 'basica':
+                    echo'<link rel="stylesheet" href="/css/basica.css">';
+                break;
+                default:
+                    echo '<link rel="stylesheet" href="/css/estilo.css">';
+                break;
+            }
+            ?>
         <title>
             <?php
             define("tituloprov", "Título provisional");
@@ -30,6 +40,10 @@
     </head>
     <body>
         <header>
+        <div class="respmenu">
+        <input type="checkbox">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
             <nav>
                 <ul>
 
@@ -39,9 +53,11 @@
                     <li class="jueves master"><a href="/carpeta/archivo-carpeta">Archivo dentro de carpeta</a></li>
                     <li><a href="https://carlos.sanchezdonate.com/" target="_blank">Más información</a></li>
                     <li><a href="/nueva">Redirección php</a></li>
+                    <li><a href="/basica">Web básica</a></li>
                 </ul>
                 <div class="cerrar elemnto">X</div>
             </nav>
+        </div>
             <?php
             include_once $_SERVER['DOCUMENT_ROOT'].'/assets/functions.php';
                  

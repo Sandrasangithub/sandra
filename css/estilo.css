@@ -121,8 +121,8 @@ p.intro {
 /* div, span {
     color: #000000;
     animation-name: cambiocolor;
-    animation-duration: 5s; */
-}
+    animation-duration: 5s; 
+}*/
 @keyframes cambiocolor {
     0%{color: var(--verdeagua)}
     50%{color: var(--azul)}
