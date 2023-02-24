@@ -1,0 +1,1 @@
+<?php echo '<h1> ¡Hola! Esta es la página de inicio </h1>'; ?>

@@ -20,16 +20,19 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wordpress' );
 
-/** Database username */
+define( 'DB_NAME', 'nuevowordpress' );
+
+// Database username 
 define( 'DB_USER', 'root' );
 
-/** Database password */
+//Database password /
 define( 'DB_PASSWORD', '' );
 
-/** Database hostname */
+//Database hostname /
 define( 'DB_HOST', 'localhost' );
+
+
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -55,14 +58,14 @@ if ( !defined('WP_CLI') ) {
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'Ia74VhW1ZsWGYmV1OZBz2JmYT87UjqZonFSKxNG5QZ7BGilWKZM7rOJ1ZmLHEE7p' );
-define( 'SECURE_AUTH_KEY',  'JnYKSoRRKPONlcU2YKNlrrYps379rAfVk4nTjvqsIpV8XKS1Q9pQt6rn99d4BpJV' );
-define( 'LOGGED_IN_KEY',    'lNpwE6PZOGzaHaQVheNkXNWJRbXQG8Q2U9ejY1FhxbYcOg2vLeCpEEb96hC9BLli' );
-define( 'NONCE_KEY',        'RKP6eQhuHy0KKu7Xfv9b3w9uLVtPy3qXfLtcqGkJmStzptyERMSy68RPi80QzXML' );
-define( 'AUTH_SALT',        'CjYdZMsG3GS7XzdZO2U1he471Keq4zmGThld4Sx0cq8wlO5Kt8jvPu4mtrET1Vkg' );
-define( 'SECURE_AUTH_SALT', 'OvUklMrN8Z7NXHBLGeq1AbcGzuU9TXCyjA5rderg5Z5s7RSwcmP7kWSQ6NPZ52hy' );
-define( 'LOGGED_IN_SALT',   'MC28giFZt4KMq6AumddTo8tO0vkKCcUQEyG5R8Zh18w7SgHbqYV6I7fQAxR4BtuW' );
-define( 'NONCE_SALT',       '9XFABwSaOEVshk0nusuJqqzGyVVmJAvl0hqT10RZTs6TJ8SzQsG5Lmw7q4976bnn' );
+define( 'AUTH_KEY',         'fV9nerbVuANueLlOcAd6hYBZQQAHgu2XYnxtI9taU34Gk5NIppJL82xjWFdRtoRW' );
+define( 'SECURE_AUTH_KEY',  'L24bZLDBuVSDFkSnXItqp4y5h7ndxeF877wIbOE55kvbisWqSZY4c0wJLS21FJI4' );
+define( 'LOGGED_IN_KEY',    'd14qNdmF0A0NrElwJlXpgvTWv1wYkPukw9bmldAFLDpqQfZ1nD4FjhBMdDgDmxYU' );
+define( 'NONCE_KEY',        'emhF2BhN64VBqUxVdgGd5I1Po1IDKBYoan1MXsPzpX3FzkLTKn4CFl4RflQdseQX' );
+define( 'AUTH_SALT',        'CGBL3KkrEppAFMxO655sDqbZhDifDNsaMrgokYnV7yULiz4enkPhYLKbdeQgMAly' );
+define( 'SECURE_AUTH_SALT', 'WHBETMLoTN12b2JHiJBVvlV02ksealnz1bZv8U4m6PTh7qSxdrGkevxNRbh7Vj0G' );
+define( 'LOGGED_IN_SALT',   'VklkeWNLbCwnH5Dpahb3xB8XqVPnaSUjF1ErEksSTEkv5GQZFHxd2pmcl8Tsfymk' );
+define( 'NONCE_SALT',       'cq0DaUq3Xlz606DK6uKsSJBtkKfIffrA3c91KdAtJHrTNPIwyCen2AnN3X4ULh3C' );
 
 /**#@-*/
 
