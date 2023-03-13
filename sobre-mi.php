@@ -4,8 +4,18 @@ $ciudad = "Salamanca";
 $h1= "<h1>Bienvenido a la página sobre mi</h1>" ;
 include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
 ?>
-
-
+<div class="imagenclase"></div>
+<div class="imagenbase64"></div>
+<svg class="svgimagen" aria-labelledby="svgtitulo">
+  <title id="svgtitulo">Icono sombrero</title>
+</svg>
+<div class="dosimagenes">
+  <picture>
+ <source type="image/avif" srcset="/imagenes/modulo-imagenes/cartagena.avif">
+ <source type="image/webp" srcset="/imagenes/modulo-imagenes/cartagena/imagenes/modulo-imagenes/cartagena.webp">
+ <img src="/imagenes/modulo-imagenes/cartagena.jpg" >
+</picture>
+<div class="atleta"> <img src="/imagenes/modulo-imagenes/atleta.png" ></div></div>
 <?php call(); ?>
 
 <div class="cita"> <em>Lorem ipsum dolor sit amet,</em> consectetur adipiscing elit. <strong>Nunc vehicula nunc eu facilisis rhoncus.</strong> Morbi fringilla, metus
