@@ -9,8 +9,10 @@ if (get_field('descripcion-corta')){
 }
 else{;}
 ?>
+<img height="300px" class="fotofestival" src="<?php the_field( 'imagen_festival' ); ?>" />
 <?php 
 if (in_category('festivales')){ ?>
+
 <table>
 <tr>
     <th>Festival</th>
