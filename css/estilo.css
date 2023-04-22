@@ -255,7 +255,14 @@ img {
     width: 200px;
     margin: 10px;
 }
-
+.respmenu input[type="checkbox"] {
+   display: none ;
+    
+  }
+  .enl{
+    color:var(--morado);
+    cursor: pointer;
+  }
 /*Responsive*/
 @media all and (min-width: 400px) and (max-width: 800px) 
 {
