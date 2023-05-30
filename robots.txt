@@ -1,0 +1,15 @@
+# Sandra
+Sitemap: https://example.com/sitemap.xml
+
+User-agent:*
+User-agent: Googlebot
+Disallow: /scripts/*.js?*prescindible
+Disallow: /nomeves/*
+Allow: /nomeves/cartagena/
+Allow: /nomeves/sources/*.css
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /blackfriday/
