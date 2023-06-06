@@ -1,43 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="wp-content/stylesheet.xsl" type="text/xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://ejemplo.com/</loc>
     <lastmod>2023-05-31</lastmod>
     <video:video>
-       <video:thumbnail_loc> https://ejemplo.test/imagenes/cheatsheet.png</video:thumbnail_loc>
-       <video:title>video oso</video:title>
-       <video:description> Oso en el rio</video:description>
-      <video:player-loc>https://ejemplo.test/videos/oso.mp4</video:player-loc>
+        <video:thumbnail_loc> https://ejemplo.test/imagenes/cheatsheet.png</video:thumbnail_loc>
+        <video:title>video oso</video:title>
+        <video:description> Oso en el rio</video:description>
+        <video:player-loc>https://ejemplo.test/videos/oso.mp4</video:player-loc>
       <!--Etiquetas opcionales para video-->
-      <video:duration>12</video:duration> <!--duración en segundos-->
-      <video:expiration_date></video:expiration_date> <!--fecha expiración-->
-      <video:publication_date></video:publication_date> <!--dia de publicación-->
-      <video:family_friendly>yes</video:family_friendly><!--apto para todos los públicos-->
-      <video:rating>5.0</video:rating><!--automatizado con datos reales(puntuación)-->
-      <video:view_count>6666</video:view_count><!--automatizado con datos reales (numero de veces que se ha visualizado)-->
-      <video:restriction relationship="allow">ES MX US</video:restriction> <!--denegar/habilitar el acceso a ciertos paises (deny: para todos los paises menos esos)-->
-      <video:platform relationship="deny">web mobile tv</video:platform><!--en que plataformas se puede ver o no-->
-      <video:requires_subscription><!--yes o no--></video:requires_subscription>
-      <video:uploader>Pepe Perez</video:uploader> <!--quien ha subido el video-->
-      <video:live><!--yes o no--></video:live>
-      <video:tag>etiquetas, para, seo, como, las, meta, keywords</video:tag>
-      <!--Sitemap de imagen, video y noticias solo vale para google. -->
+        <video:duration>12</video:duration> <!--duración en segundos-->
+        <video:expiration_date></video:expiration_date> <!--fecha expiración-->
+        <video:publication_date></video:publication_date> <!--dia de publicación-->
+        <video:family_friendly>yes</video:family_friendly><!--apto para todos los públicos-->
+        <video:rating>5.0</video:rating><!--automatizado con datos reales(puntuación)-->
+        <video:view_count>6666</video:view_count><!--automatizado con datos reales (numero de veces que se ha visualizado)-->
+        <video:restriction relationship="allow">ES MX US</video:restriction> <!--denegar/habilitar el acceso a ciertos paises (deny: para todos los paises menos esos)-->
+        <video:platform relationship="deny">web mobile tv</video:platform><!--en que plataformas se puede ver o no-->
+        <video:requires_subscription><!--yes o no--></video:requires_subscription>
+        <video:uploader>Pepe Perez</video:uploader> <!--quien ha subido el video-->
+        <video:live><!--yes o no--></video:live>
+        <video:tag>etiquetas, para, seo, como, las, meta, keywords</video:tag>
+        <!--Sitemap de imagen, video y noticias solo vale para google -->
     </video:video> 
+        <news:news>
+          <news:publication>
+            <news:name>The Example Times</news:name><!--el nombre la publicación que debe de ser el H1-->
+            <news:language>es</news:language>
+          </news:publication>
+          <news:publication_date>2008-12-23</news:publication_date> <!--para noticias poner la hora puede ser importante -->
+          <news:title>Companies A, B in Merger Talks</news:title><!--puedes inventartelo-->
+        </news:news>
   </url>
     <url>
     <loc>https://ejemplo.com/sobre-mi</loc>
     <lastmod>2023-05-31</lastmod>
   </url>
-    <url>
+  <url>
     <loc>https://ejemplo.com/contacto</loc>
     <lastmod>2023-05-31</lastmod>
         <image:image>
             <image:loc>https://ejemplo.test//imagenes/modulo-imagenes/cartagena.jpg</image:loc>
         </image:image>
-    <url>
+  </url>
+  <url>
     <loc>https://ejemplo.com/carpeta/archivo-carpeta</loc>
     <lastmod>2023-05-31</lastmod>
+  </url>
+  <url>
+    <loc>https://ejemplo.com/news</loc>
+    <lastmod>2023-05-31</lastmod>
+        <news:news>
+          <news:publication>
+            <news:name>News</news:name><!--el nombre la publicación que debe de ser el H1-->
+            <news:language>es</news:language>
+          </news:publication>
+          <news:publication_date>2008-12-23</news:publication_date> <!--para noticias poner la hora puede ser importante -->
+          <news:title>Noticias de última hora</news:title><!--puedes inventartelo-->
+        </news:news>
   </url>
 </urlset>
