@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://ejemplo.test/rock-fest/</loc>
+    <lastmod>2023-03-19</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>Rock-Fest</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2023-03-19T13:05:04.000000+00:00</news:publication_date>
+      <news:title/>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://ejemplo.test/prueba-sitemap/</loc>
+    <lastmod>2023-06-07</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>Prueba sitemap</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2023-06-07T16:44:47.000000+00:00</news:publication_date>
+      <news:title/>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://ejemplo.test/74-2/</loc>
+    <lastmod>2023-03-16</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>Trapfest</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2023-03-16T20:20:43.000000+00:00</news:publication_date>
+      <news:title/>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://ejemplo.test/salafest/</loc>
+    <lastmod>2023-03-16</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>salafest</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2023-03-16T19:59:02.000000+00:00</news:publication_date>
+      <news:title/>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://ejemplo.test/prueba-noticia/</loc>
+    <lastmod>2023-06-09</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>prueba noticia</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2023-06-09T15:15:13.000000+00:00</news:publication_date>
+      <news:title/>
+    </news:news>
+  </url>
+</urlset>

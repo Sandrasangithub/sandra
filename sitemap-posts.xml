@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ejemplo.test/rock-fest/</loc>
+    <lastmod>2023-03-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ejemplo.test/prueba-sitemap/</loc>
+    <lastmod>2023-06-07</lastmod>
+  </url>
+  <url>
+    <loc>https://ejemplo.test/74-2/</loc>
+    <lastmod>2023-03-16</lastmod>
+  </url>
+  <url>
+    <loc>https://ejemplo.test/salafest/</loc>
+    <lastmod>2023-03-16</lastmod>
+  </url>
+  <url>
+    <loc>https://ejemplo.test/prueba-noticia/</loc>
+    <lastmod>2023-06-09</lastmod>
+  </url>
+</urlset>
