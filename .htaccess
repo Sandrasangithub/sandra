@@ -1,7 +1,9 @@
 #redirección a https
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTPS} off
-RewriteRule (.*) https://ejemplo.test/$1 [R=301,L]
+# Lo has puesto correctamente, pero le pongo la variable para que me funcione el proyecto a mi también
+# RewriteRule (.*) https://ejemplo.test/ [R=301,L,QSA]
+RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L,QSA]
 </IfModule>
 
 RewriteEngine on
