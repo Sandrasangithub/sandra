@@ -16,4 +16,3 @@ include 'includes/del-sitemap.php';
 include 'includes/template-generator.php';
 
 ?>
-aaaaaaa
