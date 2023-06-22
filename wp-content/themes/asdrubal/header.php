@@ -6,8 +6,8 @@
           
 <?php
 // Hay aquí un fallo que no encuentro
- include 'components/metas-seo.php';
- wp_head();
+wp_head();
+include 'components/metas-seo.php';
 
  ?>
         </head>

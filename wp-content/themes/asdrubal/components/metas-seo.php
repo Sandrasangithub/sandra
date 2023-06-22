@@ -3,7 +3,9 @@ $term = get_queried_object();
 $protocol = isset($_SERVER["HTTPS"]) ? 'https' : 'http';
 $url_sin_string = $protocol . '://' . $_SERVER['HTTP_HOST'] . strtok($_SERVER["REQUEST_URI"], '?');
 
+// SIN EL ACF ACTIVADO ROMPE
 ?>
+
 
 <!-- Metaetiquetas del máster -->
 <meta name="viewport" content="width=device-width, initial-scale=1" />

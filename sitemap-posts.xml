@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ejemplo.test/rock-fest/</loc>
-    <lastmod>2023-03-19</lastmod>
+    <loc>https://master-sandra.test/que-es-sem/</loc>
+    <lastmod>2023-06-22</lastmod>
+    <image:image>
+      <image:loc>https://master-sandra.test/wp-content/uploads/2023/02/cover-martin-splitt-sob23-300x300.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>https://ejemplo.test/prueba-sitemap/</loc>
-    <lastmod>2023-06-07</lastmod>
+    <loc>https://master-sandra.test/otro-post-nuevo/</loc>
+    <lastmod>2023-02-01</lastmod>
   </url>
   <url>
-    <loc>https://ejemplo.test/74-2/</loc>
-    <lastmod>2023-03-16</lastmod>
+    <loc>https://master-sandra.test/otra-entrada/</loc>
+    <lastmod>2023-02-01</lastmod>
   </url>
   <url>
-    <loc>https://ejemplo.test/salafest/</loc>
-    <lastmod>2023-03-16</lastmod>
+    <loc>https://master-sandra.test/post-sobre-el-grupo-2/</loc>
+    <lastmod>2023-02-01</lastmod>
   </url>
   <url>
-    <loc>https://ejemplo.test/prueba-noticia/</loc>
-    <lastmod>2023-06-09</lastmod>
+    <loc>https://master-sandra.test/nuevo-post/</loc>
+    <lastmod>2023-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://master-sandra.test/hola-mundo/</loc>
+    <lastmod>2023-02-01</lastmod>
   </url>
 </urlset>

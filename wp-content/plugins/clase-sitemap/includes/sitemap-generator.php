@@ -26,17 +26,31 @@ $argsblog = array(
 $obtencionblog = new WP_Query( $argsblog );
 if ($obtencionblog->have_posts()) :
 while ($obtencionblog->have_posts()) : $obtencionblog->the_post();
-if (!get_field("canonical")) {
+
+//Si funciona el sitemap de imágenes pero le tienes que poner tus valores
 $metarobots_checked_values = get_field('metarobots');
-if ($metarobots_checked_values && (in_array('all', $metarobots_checked_values) || in_array('index', $metarobots_checked_values))) {
 $enlace = get_permalink();
 $lastestmod = get_the_modified_date('Y-m-d');
 $resultblog = $domblog->createElement('url');
 $rootblog->appendChild($resultblog);
 $resultblog->appendChild($domblog->createElement('loc', $enlace));
 $resultblog->appendChild($domblog->createElement('lastmod', $lastestmod));
-}
-}
+  // Obtener las imágenes en el contenido de the_content()
+  $content = get_the_content();
+  $pattern = '/<img[^>]+src=[\'"]([^\'"]+)[\'"][^>]*>/';
+  preg_match_all($pattern, $content, $matches);
+
+  // Agregar las URL de las imágenes al elemento <url>
+  if (!empty($matches[1])) {
+    foreach ($matches[1] as $image_url) {
+      $image_element = $domblog->createElement('image:image');
+      $resultblog->appendChild($image_element);
+
+      $loc_element = $domblog->createElement('image:loc', $image_url);
+      $image_element->appendChild($loc_element);
+    }
+  }
+
 endwhile;
 wp_reset_postdata();
 endif;
