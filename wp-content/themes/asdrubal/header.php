@@ -5,9 +5,11 @@
           <link rel="stylesheet" href="/wp-content/themes/asdrubal/style.css" type="text/css" />
           
 <?php
-include 'components/metas-seo.php';
+// Hay aquí un fallo que no encuentro
+ include 'components/metas-seo.php';
+ wp_head();
 
- wp_head();?>
+ ?>
         </head>
     <body>
     <header>

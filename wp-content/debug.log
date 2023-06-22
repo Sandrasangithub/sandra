@@ -1,0 +1,234 @@
+[22-Jun-2023 07:27:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:27:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:27:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:28:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:28:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:28:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:28:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:28:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\agrupapost\display-post\card-post.php:5
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\agrupapost\agrupapost.php(13): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(10): include('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#4 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#5 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\agrupapost\display-post\card-post.php on line 5
+[22-Jun-2023 07:29:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:29:18 UTC] PHP Warning:  Undefined variable $protocol in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 4
+[22-Jun-2023 07:29:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:29:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:29:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:16
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 16
+[22-Jun-2023 07:29:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:16
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 16
+[22-Jun-2023 07:29:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\plugins\Anibal-main\includes\metas-seo.php:18
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\class-wp-hook.php(308): wp_seohead('')
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(3043): do_action('wp_head')
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(10): wp_head()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#7 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#8 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#9 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#10 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#11 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#12 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\plugins\Anibal-main\includes\metas-seo.php on line 18
+[22-Jun-2023 07:29:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\plugins\Anibal-main\includes\metas-seo.php:18
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\class-wp-hook.php(308): wp_seohead('')
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(3043): do_action('wp_head')
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(10): wp_head()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#7 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#8 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#9 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#10 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#11 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#12 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\plugins\Anibal-main\includes\metas-seo.php on line 18
+[22-Jun-2023 07:30:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:31:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:31:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21
+[22-Jun-2023 07:31:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php:21
+Stack trace:
+#0 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\header.php(9): include()
+#1 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(783): require_once('C:\\Users\\barvo\\...')
+#2 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template.php(718): load_template('C:\\Users\\barvo\\...', true, Array)
+#3 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\front-page.php(3): get_header()
+#5 C:\Users\barvo\Documents\Github\master-sandra\wp-includes\template-loader.php(106): include('C:\\Users\\barvo\\...')
+#6 C:\Users\barvo\Documents\Github\master-sandra\wp-blog-header.php(19): require_once('C:\\Users\\barvo\\...')
+#7 C:\Users\barvo\Documents\Github\master-sandra\index.php(17): require('C:\\Users\\barvo\\...')
+#8 {main}
+  thrown in C:\Users\barvo\Documents\Github\master-sandra\wp-content\themes\asdrubal\components\metas-seo.php on line 21

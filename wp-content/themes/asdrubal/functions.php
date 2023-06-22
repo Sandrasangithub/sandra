@@ -1,4 +1,5 @@
 <?php
+
 $agrupapost = __DIR__ .'/agrupapost/';
 
 $plantillas = __DIR__ . '/plantillas/';
