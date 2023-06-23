@@ -20,8 +20,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+$dominio_actual = $_SERVER['HTTP_HOST'];
 
-define( 'DB_NAME', 'nuevowordpress' );
+if ($dominio_actual = 'master-sandra.test') {
+    define('DB_NAME', 'mastersandra');
+} else {
+    define('DB_NAME', 'nuevowordpress');
+}
 
 // Database username 
 define( 'DB_USER', 'root' );
@@ -89,7 +94,15 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
+
+define( 'WP_DEBUG_DISPLAY', false );
+
+// define( 'WP_DEBUG_LOG', true );
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 
 /* Add any custom values between this line and the "stop editing" line. */
 
