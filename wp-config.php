@@ -24,7 +24,7 @@
 /** The name of the database for WordPress */
 $dominio_actual = $_SERVER['HTTP_HOST'];
 
-if ($dominio_actual = 'master-sandra.test') {
+if ($dominio_actual == 'master-sandra.test') {
     define('DB_NAME', 'mastersandra');
 } else {
     define( 'DB_NAME', 'nuevowordpress' );
