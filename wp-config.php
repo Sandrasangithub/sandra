@@ -18,6 +18,8 @@
  * @package WordPress
  */
 
+
+
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 $dominio_actual = $_SERVER['HTTP_HOST'];
@@ -25,7 +27,7 @@ $dominio_actual = $_SERVER['HTTP_HOST'];
 if ($dominio_actual = 'master-sandra.test') {
     define('DB_NAME', 'mastersandra');
 } else {
-    define('DB_NAME', 'nuevowordpress');
+    define( 'DB_NAME', 'nuevowordpress' );
 }
 
 // Database username 
