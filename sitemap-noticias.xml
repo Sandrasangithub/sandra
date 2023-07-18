@@ -2,15 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://ejemplo.test/rock-fest/</loc>
-    <lastmod>2023-03-19</lastmod>
+    <lastmod>2023-06-29</lastmod>
     <news:news>
       <news:publication>
         <news:name>Rock-Fest</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2023-03-19T13:05:04.000000+00:00</news:publication_date>
+      <news:publication_date>2023-06-29T13:55:08.000000+00:00</news:publication_date>
       <news:title/>
     </news:news>
+    <image:image>
+      <image:loc>https://ejemplo.test/wp-content/uploads/2023/03/rock-fest-300x300.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://ejemplo.test/prueba-sitemap/</loc>
