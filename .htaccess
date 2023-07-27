@@ -1,20 +1,14 @@
-#redirección a https
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTPS} off
-# Lo has puesto correctamente, pero le pongo la variable para que me funcione el proyecto a mi también
-# RewriteRule (.*) https://ejemplo.test/ [R=301,L,QSA]
-RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L,QSA]
-</IfModule>
+RewriteEngine On
+# Redirigir a la versión móvil si se accede desde un dispositivo móvil
+RewriteCond %{HTTP_USER_AGENT} "android|blackberry|iphone|ipod|iemobile|opera mobile|palmos|webos|googlebot-mobile" [NC]
+RewriteCond %{REQUEST_URI} !^/devices/movil/ [NC]
+RewriteCond %{HTTP_USER_AGENT} !ipad [NC]
+RewriteCond %{HTTP_USER_AGENT} !tablet [NC]
+RewriteRule ^(.*)$ /devices/movil/$1 [L]
 
-RewriteEngine on
-
-# Rewrite /foo/bar to /foo/bar.php
-RewriteRule ^([^.?]+)$ %{REQUEST_URI}.php [L]
-
-# Return 404 if original request is /foo/bar.php
-RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
-RewriteRule .* - [L,R=404]
-
-# NOTE! FOR APACHE ON WINDOWS: Add [NC] to RewriteCond like this:
-# RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$" [NC]
-
+# Redirigir a la versión de tablet si se accede desde una tablet o Mac
+RewriteCond %{HTTP_USER_AGENT} "ipad|tablet|Macintosh|Mac OS X|kindle|playbook|silk" [NC]
+RewriteCond %{REQUEST_URI} !^/devices/tablet/ [NC]
+RewriteCond %{HTTP_USER_AGENT} !android [NC]
+RewriteCond %{HTTP_USER_AGENT} !iphone [NC]
+RewriteRule ^(.*)$ /devices/tablet/$1 [L]
