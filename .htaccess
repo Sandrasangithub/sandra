@@ -12,3 +12,10 @@ RewriteCond %{REQUEST_URI} !^/devices/tablet/ [NC]
 RewriteCond %{HTTP_USER_AGENT} !android [NC]
 RewriteCond %{HTTP_USER_AGENT} !iphone [NC]
 RewriteRule ^(.*)$ /devices/tablet/$1 [L]
+
+# Redirecciona un directorio completo a otro directorio completo 
+RedirectMatch 301 ^/contacto(.*)$ https://ejemplo.test/contactar$1
+# Código respuesta 503 en una página específica
+RedirectMatch 503 ^/sobre-mi$
+# Redirecciona un directorio completo a una página individual 
+RedirectMatch 302 ^/basica(.*)$ https://ejemplo.test/directorio-pagina
