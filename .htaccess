@@ -1,9 +1,9 @@
 RewriteEngine On
 # Redirigir a la versión móvil si se accede desde un dispositivo móvil
-RewriteCond %{HTTP_USER_AGENT} "android|blackberry|iphone|ipod|iemobile|opera mobile|palmos|webos|googlebot-mobile" [NC]
 RewriteCond %{REQUEST_URI} !^/devices/movil/ [NC]
 RewriteCond %{HTTP_USER_AGENT} !ipad [NC]
 RewriteCond %{HTTP_USER_AGENT} !tablet [NC]
+RewriteCond %{HTTP_USER_AGENT} "android|blackberry|iphone|ipod|iemobile|opera mobile|palmos|webos|googlebot-mobile" [NC]
 RewriteRule ^(.*)$ /devices/movil/$1 [L]
 
 # Redirigir a la versión de tablet si se accede desde una tablet o Mac
@@ -19,3 +19,12 @@ RedirectMatch 301 ^/contacto(.*)$ https://ejemplo.test/contactar$1
 RedirectMatch 503 ^/sobre-mi$
 # Redirecciona un directorio completo a una página individual 
 RedirectMatch 302 ^/basica(.*)$ https://ejemplo.test/directorio-pagina
+
+#canonical en una página
+<If "%{THE_REQUEST} =~ m# /sobre-mi.php#i">
+ Header set Link "<http://ejemplo.test/>; rel='canonical'"
+</If>
+# noindex en un directorio
+<If "%{THE_REQUEST} =~ m# /carpeta/[^/]+/#i">
+   Header set X-Robots-Tag "noindex"
+</If>
