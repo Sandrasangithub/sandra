@@ -38,13 +38,13 @@ RewriteCond %{HTTP_USER_AGENT} !iphone [NC]
 RewriteRule ^(.*)$ /devices/tablet/$1 [L]
 
 # Redirecciona un directorio completo a otro directorio completo 
-RedirectMatch 301 ^/contacto(.*)$ https://ejemplo.test/contactar$1
+# RedirectMatch 301 ^/contacto(.*)$ https://ejemplo.test/contactar$1
 # Código respuesta 503 en una página específica
-RedirectMatch 503 ^/sobre-mi$
+# RedirectMatch 503 ^/sobre-mi$
 # Redirecciona un directorio completo a una página individual 
-RedirectMatch 302 ^/basica(.*)$ https://ejemplo.test/directorio-pagina
+# RedirectMatch 302 ^/basica(.*)$ https://ejemplo.test/directorio-pagina
 
-#canonical en una página
+# canonical en una página
 <If "%{THE_REQUEST} =~ m# /sobre-mi.php#i">
  Header set Link "<http://ejemplo.test/>; rel='canonical'"
 </If>
@@ -53,7 +53,7 @@ RedirectMatch 302 ^/basica(.*)$ https://ejemplo.test/directorio-pagina
    Header set X-Robots-Tag "noindex"
 </If>
 
-#Cache
+# Cache
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresDefault "access plus 4 months"
@@ -97,4 +97,14 @@ ExpiresByType application/font-woff2 "access plus 1 year"
     AddOutputFilterByType BROTLI font/opentype font/ttf font/eot font/otf
     AddOutputFilterByType BROTLI font/woff
     AddOutputFilterByType BROTLI font/woff2
+</IfModule>
+
+# Indirección estándar
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/sobre-mi.php [NC]
+RewriteRule ^indireccion(.*)$ /sobre-mi.php$1 [L]
+# Devolver un error 404 para /ejemplo
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/sobre-mi.php [NC]
+RewriteRule ^ - [R=404,L]
 </IfModule>
