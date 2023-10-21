@@ -45,13 +45,13 @@ RewriteRule ^(.*)$ /devices/tablet/$1 [L]
 # RedirectMatch 302 ^/basica(.*)$ https://ejemplo.test/directorio-pagina
 
 # canonical en una página
-<If "%{THE_REQUEST} =~ m# /sobre-mi.php#i">
- Header set Link "<http://ejemplo.test/>; rel='canonical'"
-</If>
-# noindex en un directorio
-<If "%{THE_REQUEST} =~ m# /carpeta/[^/]+/#i">
-   Header set X-Robots-Tag "noindex"
-</If>
+# <If "%{THE_REQUEST} =~ m# /sobre-mi.php#i">
+# Header set Link "<http://ejemplo.test/>; rel='canonical'"
+# </If>
+#  noindex en un directorio
+# <If "%{THE_REQUEST} =~ m# /carpeta/[^/]+/#i">
+#   Header set X-Robots-Tag "noindex"
+# </If>
 
 # Cache
 <IfModule mod_expires.c>
@@ -107,4 +107,14 @@ RewriteRule ^indireccion(.*)$ /sobre-mi.php$1 [L]
 # Devolver un error 404 para /ejemplo
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/sobre-mi.php [NC]
 RewriteRule ^ - [R=404,L]
+</IfModule>
+
+# Prevenir el hotlinking
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# RewriteCond %{HTTP_REFERER} !^http://ejemplo\.test/ [NC]
+# RewriteCond %{HTTP_REFERER} ^https://(www\.)?google\. [NC]
+RewriteCond %{REQUEST_FILENAME} \.(jpg|jpeg|png|gif|webp)$ [NC]
+RewriteRule ^ - [R=204,L]
 </IfModule>
